@@ -1,4 +1,4 @@
-function test(agent, requestBody, url){
+function test(agent){
 			   result = "testing the module";
          agent.add(result);
          return agent;
