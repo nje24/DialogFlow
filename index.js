@@ -11,6 +11,7 @@ function test(agent){
 	};
 	rp(options)
     		.then(function (services) {
+			console.log(services);
         		result = services.length;
 			agent.add(result);
         		return agent;
