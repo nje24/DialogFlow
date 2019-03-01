@@ -20,9 +20,6 @@ function test(agent){
 			agent.add(result);
         		return agent;
     		});
-	result = "testing the module";
-        agent.add(result);
-        return agent;
 }
 
 
