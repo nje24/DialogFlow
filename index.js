@@ -16,7 +16,7 @@ function test(agent){
 			agent.add(result);
     		})
 		.catch(function (err) {
-        		result = "API call failed";
+        		result = err;
 			agent.add(result);
     		});
 	return Promise.resolve(agent);
