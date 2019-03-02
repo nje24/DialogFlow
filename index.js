@@ -14,13 +14,12 @@ function test(agent){
 			console.log(services);
         		result = services.length;
 			agent.add(result);
-        		return agent;
     		})
 		.catch(function (err) {
         		result = "API call failed";
 			agent.add(result);
-        		return agent;
     		});
+	return Promise.resolve(agent);
 }
 
 
