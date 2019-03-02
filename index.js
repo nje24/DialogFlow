@@ -9,7 +9,7 @@ function test(agent){
     		},
     		json: true // Automatically parses the JSON string in the response
 	};
-	rp(options)
+	return rp(options)
     		.then(function (services) {
 			console.log(services);
         		result = services.length;
